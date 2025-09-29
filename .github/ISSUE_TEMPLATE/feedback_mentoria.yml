@@ -1,0 +1,23 @@
+name: "Feedback — Mentoria"
+about: "Envie feedback sobre sessões de mentoria, conteúdo ou mentor"
+title: "Feedback: "
+labels: ["feedback","mentoria"]
+assignees: []
+body: |
+  **Mentor**
+  <!-- Nome do mentor -->
+
+  **Data da sessão**
+  <!-- DD/MM/AAAA -->
+
+  **Resumo**
+  <!-- Breve descrição do que foi abordado -->
+
+  **O que funcionou bem**
+  - 
+
+  **O que pode ser melhorado**
+  - 
+
+  **Sugestões / Observações adicionais**
+  <!-- Comentários livres -->

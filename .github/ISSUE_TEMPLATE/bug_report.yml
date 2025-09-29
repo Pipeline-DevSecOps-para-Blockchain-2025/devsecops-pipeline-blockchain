@@ -1,0 +1,30 @@
+name: "Bug report"
+about: "Relate problemas e erros encontrados no projeto"
+title: "[BUG] "
+labels: ["bug"]
+assignees: []
+body: |
+  **Descrição**
+  <!-- Descreva o problema de forma clara e sucinta -->
+
+  **Passos para reproduzir**
+  1. 
+  2. 
+  3. 
+
+  **Comportamento esperado**
+  <!-- O que você esperava que acontecesse -->
+
+  **Comportamento observado**
+  <!-- O que aconteceu de fato -->
+
+  **Logs / Mensagens de erro**
+  <!-- Cole aqui trechos relevantes de logs ou stack traces -->
+
+  **Ambiente**
+  - Sistema operacional:
+  - Versão do software:
+  - Versão das dependências relevantes:
+
+  **Evidências**
+  <!-- Links para screenshots, gravações ou PRs relacionados -->

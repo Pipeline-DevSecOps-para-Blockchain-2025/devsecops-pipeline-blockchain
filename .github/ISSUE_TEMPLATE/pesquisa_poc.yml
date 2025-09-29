@@ -1,0 +1,29 @@
+name: "Pesquisa / PoC"
+about: "Solicitação de prova de conceito ou pesquisa técnica"
+title: "[POC] "
+labels: ["research","poc"]
+assignees: []
+body: |
+  **Objetivo da PoC**
+  <!-- O que se pretende validar -->
+
+  **Hipóteses**
+  - 
+
+  **Escopo**
+  - O que está dentro / fora do escopo
+
+  **Critérios de sucesso**
+  - 
+
+  **Métricas / Resultados esperados**
+  - 
+
+  **Riscos / Bloqueadores**
+  - 
+
+  **Recursos necessários**
+  - Infraestrutura, acesso, tempo estimado, pessoas
+
+  **Evidências / Resultados**
+  <!-- Preencha após conclusão -->

@@ -1,0 +1,29 @@
+name: "Nova tarefa"
+about: "Crie uma nova tarefa para o backlog com critérios e estimativas"
+title: "[TAREFA] "
+labels: ["task"]
+assignees: []
+body: |
+  **Resumo**
+  <!-- Descrição curta da tarefa -->
+
+  **Objetivo**
+  <!-- Qual problema esta tarefa resolve / qual valor entrega -->
+
+  **Critérios de aceite**
+  - 
+
+  **Checklist / Subtarefas**
+  - [ ] 
+
+  **Prioridade**
+  - Baixa / Média / Alta
+
+  **Estimativa**
+  - Tempo/Story points:
+
+  **Dependências**
+  - 
+
+  **Notas adicionais**
+  <!-- URLs, designs, links para docs -->
