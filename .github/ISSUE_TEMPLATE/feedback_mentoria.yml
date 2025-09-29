@@ -1,6 +1,6 @@
 name: '💡 Feedback da Mentoria'
 description: 'Capture um insight ou uma nova demanda vinda da sessão de mentoria.'
-title: "[MENTORIA]: "
+title: "Issue #<number>: [MENTORIA] "
 labels: ["mentorship-feedback"]
 projects: ["sua-org/numero-do-projeto"]
 assignees: []

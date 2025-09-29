@@ -1,6 +1,6 @@
 name: '🐞 Relato de Bug'
 description: 'Reporte um erro ou comportamento inesperado no pipeline ou nas ferramentas.'
-title: "[BUG]: "
+title: "Issue #<number>: [BUG] "
 labels: ["bug"]
 projects: ["sua-org/numero-do-projeto"]
 assignees: []

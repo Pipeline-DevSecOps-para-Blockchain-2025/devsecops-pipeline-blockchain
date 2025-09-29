@@ -1,6 +1,6 @@
 name: '🔬 Tarefa de Pesquisa / Prova de Conceito (PoC)'
 description: 'Utilize este modelo para tarefas de pesquisa de ferramentas ou validação de conceitos.'
-title: "[PESQUISA]: "
+title: "Issue #<number>: [PESQUISA] "
 labels: ["research", "PoC"]
 projects: ["sua-org/numero-do-projeto"]
 assignees: []

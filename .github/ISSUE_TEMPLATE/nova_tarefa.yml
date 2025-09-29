@@ -1,6 +1,6 @@
 name: '🚀 Nova Tarefa / Funcionalidade'
 description: 'Crie uma nova tarefa ou funcionalidade que faz parte do plano do projeto.'
-title: "[TAREFA]: "
+title: "Issue #<number>: [TAREFA] "
 labels: ["task", "enhancement"]
 projects: ["sua-org/numero-do-projeto"]
 assignees: []
