@@ -1,9 +1,9 @@
 ---
-name: '💡 Feedback da Mentoria'
-description: 'Capture um insight ou uma nova demanda vinda da sessão de mentoria.'
-title: '[MENTORIA]: '
-labels: ['mentorship-feedback']
-assignees: ''
+name: "💡 Feedback da Mentoria"
+description: "Capture um insight ou uma nova demanda vinda da sessão de mentoria."
+title: "[MENTORIA]: "
+labels: ["mentorship-feedback"]
+assignees: []
 
 ---
 
