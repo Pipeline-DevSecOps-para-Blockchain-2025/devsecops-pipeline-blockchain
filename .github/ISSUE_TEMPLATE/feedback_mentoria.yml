@@ -1,5 +1,5 @@
 name: "Feedback — Mentoria"
-about: "Envie feedback sobre sessões de mentoria, conteúdo ou mentor"
+description: "Envie feedback sobre sessões de mentoria, conteúdo ou mentor"
 title: "Feedback: "
 labels: ["feedback","mentoria"]
 assignees: []

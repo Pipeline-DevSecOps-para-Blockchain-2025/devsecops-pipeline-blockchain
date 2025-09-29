@@ -1,5 +1,5 @@
 name: "Bug report"
-about: "Relate problemas e erros encontrados no projeto"
+description: "Relate problemas e erros encontrados no projeto"
 title: "[BUG] "
 labels: ["bug"]
 assignees: []

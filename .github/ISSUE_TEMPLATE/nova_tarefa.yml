@@ -1,5 +1,5 @@
 name: "Nova tarefa"
-about: "Crie uma nova tarefa para o backlog com critérios e estimativas"
+description: "Crie uma nova tarefa para o backlog com critérios e estimativas"
 title: "[TAREFA] "
 labels: ["task"]
 assignees: []

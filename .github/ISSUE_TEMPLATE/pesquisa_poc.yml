@@ -1,5 +1,5 @@
 name: "Pesquisa / PoC"
-about: "Solicitação de prova de conceito ou pesquisa técnica"
+description: "Solicitação de prova de conceito ou pesquisa técnica"
 title: "[POC] "
 labels: ["research","poc"]
 assignees: []
