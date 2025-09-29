@@ -1,5 +1,5 @@
 # .github/ISSUE_TEMPLATE/config.yml
-blank_issues_enabled: false #para habilitar issues em branco, mude para true
+blank_issues_enabled: true #para habilitar issues em branco, mude para true
 contact_links:
   - name: 💬 Discussões Gerais
     url: https://github.com/Pipeline-DevSecOps-para-Blockchain-2025/devsecops-pipeline-blockchain/discussions
