@@ -1,4 +1,6 @@
 # .github/ISSUE_TEMPLATE/config.yml
+# Configuração para templates de issues no GitHub
+# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 blank_issues_enabled: true #para habilitar issues em branco, mude para true
 contact_links:
   - name: 💬 Discussões Gerais
