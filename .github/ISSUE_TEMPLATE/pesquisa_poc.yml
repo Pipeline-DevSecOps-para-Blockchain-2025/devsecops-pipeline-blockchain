@@ -1,29 +1,41 @@
-name: "Pesquisa / PoC"
-description: "Solicitação de prova de conceito ou pesquisa técnica"
-title: "[POC] "
-labels: ["research","poc"]
+name: '🔬 Tarefa de Pesquisa / Prova de Conceito (PoC)'
+description: 'Utilize este modelo para tarefas de pesquisa de ferramentas ou validação de conceitos.'
+title: "[PESQUISA]: "
+labels: ["research", "PoC"]
+projects: ["sua-org/numero-do-projeto"]
 assignees: []
-body: |
-  **Objetivo da PoC**
-  <!-- O que se pretende validar -->
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Pergunta a ser Respondida / Objetivo
+      description: Qual é o objetivo principal desta pesquisa? O que queremos descobrir ou validar?
+      placeholder: "Ex: Avaliar se a ferramenta 'Echidna' é eficaz para encontrar vulnerabilidades de 'integer overflow' em nossos contratos de exemplo."
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo da Pesquisa
+      description: Defina claramente o que será (e o que NÃO será) investigado.
+      placeholder: |
+        **No escopo:**
+        - Instalação e configuração da ferramenta.
+        - Execução contra 2 contratos de teste.
+        - Análise da facilidade de uso e qualidade dos relatórios.
 
-  **Hipóteses**
-  - 
-
-  **Escopo**
-  - O que está dentro / fora do escopo
-
-  **Critérios de sucesso**
-  - 
-
-  **Métricas / Resultados esperados**
-  - 
-
-  **Riscos / Bloqueadores**
-  - 
-
-  **Recursos necessários**
-  - Infraestrutura, acesso, tempo estimado, pessoas
-
-  **Evidências / Resultados**
-  <!-- Preencha após conclusão -->
+        **Fora do escopo:**
+        - Análise de performance em larga escala.
+        - Integração com o pipeline de CI/CD.
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Entregáveis Esperados
+      description: Qual será o resultado final desta tarefa? Use checkboxes (`- [ ]`).
+      placeholder: |
+        - [ ] Um documento de decisão na Wiki com prós e contras.
+        - [ ] Um repositório de exemplo com a PoC funcional.
+    validations:
+      required: true

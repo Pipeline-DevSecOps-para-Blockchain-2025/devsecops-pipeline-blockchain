@@ -1,30 +1,48 @@
-name: "Bug report"
-description: "Relate problemas e erros encontrados no projeto"
-title: "[BUG] "
+name: '🐞 Relato de Bug'
+description: 'Reporte um erro ou comportamento inesperado no pipeline ou nas ferramentas.'
+title: "[BUG]: "
 labels: ["bug"]
+projects: ["sua-org/numero-do-projeto"]
 assignees: []
-body: |
-  **Descrição**
-  <!-- Descreva o problema de forma clara e sucinta -->
-
-  **Passos para reproduzir**
-  1. 
-  2. 
-  3. 
-
-  **Comportamento esperado**
-  <!-- O que você esperava que acontecesse -->
-
-  **Comportamento observado**
-  <!-- O que aconteceu de fato -->
-
-  **Logs / Mensagens de erro**
-  <!-- Cole aqui trechos relevantes de logs ou stack traces -->
-
-  **Ambiente**
-  - Sistema operacional:
-  - Versão do software:
-  - Versão das dependências relevantes:
-
-  **Evidências**
-  <!-- Links para screenshots, gravações ou PRs relacionados -->
+body:
+  - type: markdown
+    attributes:
+      value: "Obrigado por nos ajudar a melhorar o pipeline! Detalhe o bug abaixo."
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Descrição do Bug
+      description: Uma descrição clara do que está acontecendo e o que você esperava que acontecesse.
+      placeholder: "Ex: O pipeline passou mesmo com uma vulnerabilidade de reentrância no contrato de teste."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Passos para Reproduzir
+      description: Detalhe os passos para que outra pessoa consiga reproduzir o erro.
+      placeholder: |
+        1. Crie um Pull Request com o contrato 'vulnerable-reentrancy.sol'.
+        2. Aguarde a conclusão do GitHub Action.
+        3. Observe que o job do 'Slither Scan' foi aprovado.
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-tool
+    attributes:
+      label: Ferramenta Afetada
+      description: Qual ferramenta ou parte do processo está apresentando o problema?
+      options:
+        - Slither (SAST)
+        - Echidna (DAST/Fuzzing)
+        - Script de Integração (CI/CD)
+        - Ambiente de Teste
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs Relevantes
+      description: Por favor, copie e cole qualquer saída de log relevante. Isso será formatado automaticamente como código.
+      render: shell

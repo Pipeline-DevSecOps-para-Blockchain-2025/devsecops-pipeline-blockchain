@@ -1,23 +1,43 @@
-name: "Feedback — Mentoria"
-description: "Envie feedback sobre sessões de mentoria, conteúdo ou mentor"
-title: "Feedback: "
-labels: ["feedback","mentoria"]
+name: '💡 Feedback da Mentoria'
+description: 'Capture um insight ou uma nova demanda vinda da sessão de mentoria.'
+title: "[MENTORIA]: "
+labels: ["mentorship-feedback"]
+projects: ["sua-org/numero-do-projeto"]
 assignees: []
-body: |
-  **Mentor**
-  <!-- Nome do mentor -->
-
-  **Data da sessão**
-  <!-- DD/MM/AAAA -->
-
-  **Resumo**
-  <!-- Breve descrição do que foi abordado -->
-
-  **O que funcionou bem**
-  - 
-
-  **O que pode ser melhorado**
-  - 
-
-  **Sugestões / Observações adicionais**
-  <!-- Comentários livres -->
+body:
+  - type: input
+    id: session-date
+    attributes:
+      label: Data da Sessão de Mentoria
+      placeholder: "Ex: AAAA-MM-DD"
+    validations:
+      required: true
+  - type: textarea
+    id: feedback-summary
+    attributes:
+      label: Resumo do Feedback
+      description: Descreva o ponto principal levantado pelo mentor. Qual foi a sugestão, crítica ou nova ideia?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-action
+    attributes:
+      label: Ação Proposta / Tarefa
+      description: Transforme o feedback em uma ou mais ações concretas. O que precisamos fazer a respeito? Use checkboxes (`- [ ]`).
+      placeholder: |
+        - [ ] Pesquisar a ferramenta 'Mythril' como alternativa ao 'Slither'.
+        - [ ] Criar um novo contrato de teste focado em 'oracle manipulation'.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade Sugerida
+      description: Qual a urgência para atuar neste feedback?
+      options:
+        - '🔴 Crítica (Devemos parar o que estamos fazendo)'
+        - '🟠 Alta (Devemos priorizar na próxima semana)'
+        - '🟡 Média (Podemos incluir no backlog para este mês)'
+        - '🔵 Baixa (Boa ideia, mas sem urgência)'
+    validations:
+      required: true

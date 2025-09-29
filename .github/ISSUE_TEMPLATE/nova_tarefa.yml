@@ -1,29 +1,49 @@
-name: "Nova tarefa"
-description: "Crie uma nova tarefa para o backlog com critérios e estimativas"
-title: "[TAREFA] "
-labels: ["task"]
+name: '🚀 Nova Tarefa / Funcionalidade'
+description: 'Crie uma nova tarefa ou funcionalidade que faz parte do plano do projeto.'
+title: "[TAREFA]: "
+labels: ["task", "enhancement"]
+projects: ["sua-org/numero-do-projeto"]
 assignees: []
-body: |
-  **Resumo**
-  <!-- Descrição curta da tarefa -->
-
-  **Objetivo**
-  <!-- Qual problema esta tarefa resolve / qual valor entrega -->
-
-  **Critérios de aceite**
-  - 
-
-  **Checklist / Subtarefas**
-  - [ ] 
-
-  **Prioridade**
-  - Baixa / Média / Alta
-
-  **Estimativa**
-  - Tempo/Story points:
-
-  **Dependências**
-  - 
-
-  **Notas adicionais**
-  <!-- URLs, designs, links para docs -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Obrigado por detalhar a nova tarefa!** 
+        Preencha os campos abaixo para garantir que todos tenham clareza sobre o trabalho a ser feito.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto e Justificativa
+      description: Descreva por que esta tarefa é necessária. Qual problema ela resolve ou qual valor ela agrega? A qual fase do projeto ela pertence?
+      placeholder: "Ex: Esta tarefa visa integrar a ferramenta Slither no pipeline para atender ao requisito de SAST da Fase 3."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Critérios de Aceite (Definition of Done)
+      description: Liste os pontos que precisam ser concluídos para que esta tarefa seja considerada "Pronta". Use a sintaxe de checkbox do Markdown (`- [ ]`).
+      placeholder: |
+        - [ ] Script de instalação do Slither foi criado.
+        - [ ] Slither é executado automaticamente em cada Pull Request.
+        - [ ] Falha no build se vulnerabilidades de nível 'High' forem encontradas.
+    validations:
+      required: true
+  - type: dropdown
+    id: work-type
+    attributes:
+      label: Tipo de Trabalho
+      description: Qual a natureza principal desta tarefa?
+      options:
+        - 'Pesquisa 🔬'
+        - 'Desenvolvimento 💻'
+        - 'Teste 🧪'
+        - 'Documentação ✍️'
+        - 'Configuração ⚙️'
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Recursos Adicionais (Opcional)
+      description: Adicione links para documentação, diagramas ou outras informações úteis.
